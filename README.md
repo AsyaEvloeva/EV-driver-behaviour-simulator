@@ -113,4 +113,5 @@ This could feed into visualizations or dashboards to help better understand and 
 
 charging behaviour on a larger scale.
 
-
+![Screenshot 2](https://github.com/AsyaEvloeva/EV-driver-behaviour-simulator/blob/main/simulator2.png)
+![Screenshot 1](https://github.com/AsyaEvloeva/EV-driver-behaviour-simulator/blob/main/simulator1.png)
