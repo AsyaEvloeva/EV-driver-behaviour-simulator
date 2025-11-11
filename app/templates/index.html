@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulator of EV driver behaviour</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.4.0"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Simulator of EV driver behaviour</h1>
+    <button id="start-btn">Start Simulation</button>
+
+    <div id="agentsSummaryTableContainer"></div>
+
+    <div class="graphs">
+      <canvas id="batteryChart"></canvas>
+      <canvas id="plugChart"></canvas>
+    </div>
+
+    <table id="agent-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Plug-in</th>
+          <th>Plug-out</th>
+          <th>Plug-in SoC</th>
+          <th>SoC with plug-in window</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/charts.js') }}"></script>
+</body>
+</html>
